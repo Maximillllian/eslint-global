@@ -2,6 +2,12 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
     root: true,
+    plugins: [
+        '@babel',
+        'import',
+        'vue',
+        'jest',
+    ],
     extends: [
         'plugin:vue/essential',
         'plugin:vue/base',
