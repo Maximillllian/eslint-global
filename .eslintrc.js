@@ -2,12 +2,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
     root: true,
-    plugins: [
-        '@babel',
-        'import',
-        'vue',
-        'jest',
-    ],
+    plugins: ['@babel', 'import', 'vue', 'jest'],
     extends: [
         'plugin:vue/essential',
         'plugin:vue/base',
@@ -16,6 +11,19 @@ module.exports = {
     ],
     rules: {
         indent: ['error', 4],
+        'arrow-parens': [2, 'as-needed'],
+        'import/prefer-default-export': ['off'],
+        'vue/html-indent': [
+            'error',
+            4,
+            {
+                attribute: 1,
+                baseIndent: 1,
+                closeBracket: 0,
+                alignAttributesVertically: true,
+                ignores: [],
+            },
+        ],
         'linebreak-style': ['error', 'windows'],
     },
 };
