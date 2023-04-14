@@ -13,6 +13,9 @@ module.exports = {
         indent: ['error', 4],
         'arrow-parens': [2, 'as-needed'],
         'import/prefer-default-export': ['off'],
+        'import/extensions': ['off'],
+        'prefer-object-spread': ['off'],
+        'prefer-template': ['off'],
         'vue/html-indent': [
             'error',
             4,
